@@ -1,0 +1,219 @@
+
+.spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.hexagon {
+  position: relative;
+  width: 20px;
+  height: 11.55px;
+  background-color: rgba(100, 199, 204, 0);
+  margin: 5.77px 0;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 5.77px solid rgba(100, 199, 204, 0);
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 5.77px solid rgba(100, 199, 204, 0);
+}
+
+.layer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.layer.odd {
+  width: 45px;
+}
+
+.layer.even {
+    width: 70px;
+}
+
+.n1 {
+  animation: spinnerMiddle 0.8s linear 0s infinite;
+}
+
+.n1:before {
+  animation: spinnerMiddleComponents 0.8s linear 0s infinite;
+}
+
+.n1:after {
+  animation: spinnerMiddleComponents 0.8s linear 0s infinite;
+}
+
+.n2 {
+  animation: spinner 0.8s linear 0.1s infinite;
+}
+
+.n2:before {
+  animation: spinnerComponents 0.8s linear 0.1s infinite;
+}
+
+.n2:after {
+  animation: spinnerComponents 0.8s linear 0.1s infinite;
+}
+
+.n3 {
+  animation: spinner 0.8s linear 0.2s infinite;
+}
+
+.n3:before {
+  animation: spinnerComponents 0.8s linear 0.2s infinite;
+}
+
+.n3:after {
+  animation: spinnerComponents 0.8s linear 0.2s infinite;
+}
+
+.n4 {
+  animation: spinner 0.8s linear 0.3s infinite;
+}
+
+.n4:before {
+  animation: spinnerComponents 0.8s linear 0.3s infinite;
+}
+
+.n4:after {
+  animation: spinnerComponents 0.8s linear 0.3s infinite;
+}
+
+.n5 {
+  animation: spinner 0.8s linear 0.4s infinite;
+}
+
+.n5:before {
+  animation: spinnerComponents 0.8s linear 0.4s infinite;
+}
+
+.n5:after {
+  animation: spinnerComponents 0.8s linear 0.4s infinite;
+}
+
+.n6 {
+  animation: spinner 0.8s linear 0.5s infinite;
+}
+
+.n6:before {
+  animation: spinnerComponents 0.8s linear 0.5s infinite;
+}
+
+.n6:after {
+  animation: spinnerComponents 0.8s linear 0.5s infinite;
+}
+
+.n7 {
+  animation: spinner 0.8s linear 0.6s infinite;
+}
+
+.n7:before {
+  animation: spinnerComponents 0.8s linear 0.6s infinite;
+}
+
+.n7:after {
+  animation: spinnerComponents 0.8s linear 0.6s infinite;
+}
+
+.n8 {
+  animation: spinner 0.8s linear 0.7s infinite;
+}
+
+.n8:before {
+  animation: spinnerComponents 0.8s linear 0.7s infinite;
+}
+
+.n8:after {
+  animation: spinnerComponents 0.8s linear 0.7s infinite;
+}
+
+@keyframes spinner {
+  0% {
+    background: rgba(100, 199, 204, 1);
+  }
+  45% {
+    background: rgba(100, 199, 204, 0);
+  }
+  100% {
+    background: rgba(100, 199, 204, 0);
+  }
+}
+
+@keyframes spinnerComponents {
+  0% {
+    border-top-color: rgba(100, 199, 204, 1);
+    border-bottom-color: rgba(100, 199, 204, 1);
+  }
+  45% {
+    border-top-color: rgba(100, 199, 204, 0);
+    border-bottom-color: rgba(100, 199, 204, 0);
+  }
+  100% {
+    border-top-color: rgba(100, 199, 204, 0);
+    border-bottom-color: rgba(100, 199, 204, 0);
+  }
+}
+
+@keyframes spinnerMiddle {
+  0% {
+    background: rgba(100, 199, 204, 1);
+  }
+  45% {
+    background: rgba(100, 199, 204, 0);
+  }
+  49.99% {
+    background: rgba(100, 199, 204, 0);
+  }
+  50% {
+    background: rgba(100, 199, 204, 1);
+  }
+  95% {
+    background: rgba(100, 199, 204, 0);
+  }
+  100% {
+    background: rgba(100, 199, 204, 0);
+  }
+}
+
+@keyframes spinnerMiddleComponents {
+  0% {
+    border-top-color: rgba(100, 199, 204, 1);
+    border-bottom-color: rgba(100, 199, 204, 1);
+  }
+  45% {
+    border-top-color: rgba(100, 199, 204, 0);
+    border-bottom-color: rgba(100, 199, 204, 0);
+  }
+  49.99% {
+    border-top-color: rgba(100, 199, 204, 0);
+    border-bottom-color: rgba(100, 199, 204, 0);
+  }
+  50% {
+    border-top-color: rgba(100, 199, 204, 1);
+    border-bottom-color: rgba(100, 199, 204, 1);
+  }
+  95% {
+    border-top-color: rgba(100, 199, 204, 0);
+    border-bottom-color: rgba(100, 199, 204, 0);
+  }
+  100% {
+    border-top-color: rgba(100, 199, 204, 0);
+    border-bottom-color: rgba(100, 199, 204, 0);
+  }
+}

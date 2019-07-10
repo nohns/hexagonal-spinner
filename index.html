@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="spinner.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(58, 58, 58, 1);
+        height: 100vh;
+      }
+
+      .spinner-label {
+        font-family: 'Roboto', sans-serif;
+        color: white;
+        margin-top: 50px;
+      }
+
+      a {
+        color: #ddd;
+        text-decoration: none;
+      }
+
+      .heart {
+          color: #db5858;
+          margin: 0 5px;
+      }
+    </style>
+    <title>CSS Hexagonal spinner - Made by Nohns with love</title>
+  </head>
+
+  <body>
+    <div class="spinner">
+      <div class="layer odd">
+        <div class="hexagon n4"></div>
+        <div class="hexagon n8"></div>
+      </div>
+      <div class="layer even">
+        <div class="hexagon n3"></div>
+        <div class="hexagon n1"></div>
+        <div class="hexagon n7"></div>
+      </div>
+      <div class="layer odd">
+        <div class="hexagon n2"></div>
+        <div class="hexagon n6"></div>
+      </div>
+    </div>
+    <label class="spinner-label">Made with <span class="heart">&#x2764;</span>	by <a href="https://github.com/nohns">Nohns</a></label>
+    
+  </body>
+</html>
